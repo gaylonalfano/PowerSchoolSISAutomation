@@ -1,4 +1,11 @@
-﻿#File Paths
+# REF: https://www.reddit.com/r/k12sysadmin/comments/t9p7pf/powerschool_to_ad_sync/
+# I made one that pulls down a CSV of all students in our SIS, compares to existing students in AD, 
+# and creates/disables any new and dropped students. It also updates their grade when they get promoted 
+# and school location when they transfer as well as appends their login info to a shared excel file on sharepoint. 
+# I’m happy to share a sanitized version if needed
+ 
+ 
+ #File Paths
 $csvpath="$PSScriptRoot\Student Information.csv"
 $LogFile = "$PSScriptRoot\SISAutomation.log"
 $NewStudents="$PSScriptRoot\NewStudents.csv"
